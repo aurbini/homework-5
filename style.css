@@ -1,0 +1,47 @@
+#heading-container {
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+  height: 300px; 
+  background-color: #eeeeee;
+  text-align: center; 
+  border-bottom: solid 5px black; 
+  margin-bottom: 20px; 
+}
+#header{
+  padding-top: ;
+  display: inline-block;
+}
+#description-header {
+  display: inline-block;
+  flex-direction: row;
+}
+.container {
+  background-color: thistle;
+  display: flex; 
+  width: 90%;
+  flex-direction: row;
+  height: 50px; 
+  margin: auto; 
+}
+.timeContainer{
+  background-color: #eeeeee;
+  flex-grow: 1;
+  border-bottom: 2px grey solid;
+  padding-top: 10px;
+} 
+.time {
+  vertical-align: middle;
+  padding-left:50%;
+}
+
+.todo {
+  background-color: silver; 
+  flex-grow: 8;
+  border-bottom:2px white solid;
+}
+.lock {
+  background-color: teal;
+  flex-grow: 1;
+  border-bottom: 2px grey solid;
+}
