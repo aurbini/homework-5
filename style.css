@@ -3,10 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-
 #heading-container {
   width: 100%; 
+  display: flex; 
   justify-content: center;
   flex-direction: column;
   height: 300px; 
@@ -16,12 +15,15 @@
   margin-bottom: 20px; 
 }
 #header{
-  padding-top: ;
+  margin-bottom: 10px ;
   display: inline-block;
 }
 #description-header {
   display: inline-block;
   flex-direction: row;
+}
+#date {
+  
 }
 #wrapper {
   padding-left: 40px; 
