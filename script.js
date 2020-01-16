@@ -1,13 +1,16 @@
-// console.log(moment().format());
 $(document).ready(function(){
+  //declare global variables 
   var m = moment()
-  var currentDate = m.format("dddd MMM Mo YYYY");
+  
+  var currentDate = m.format('MMM Do YYYY')
+  // ("dddd MMM Mo YYYY");
+  console.log(m); 
   var wrapper = $('#wrapper'); 
   var date = $('#date').text(currentDate);
+  console.log(date); 
   var savedEvent; 
   var savedEventTime; 
   var wrapper = $('#wrapper'); 
-
   var eventsArray = []; 
   var eventsObj = {
     time : '' , 
@@ -18,7 +21,8 @@ $(document).ready(function(){
   var currentHour = now.format("HH");
   function timeComparision(){ 
   var toStringIndex; 
-    for(var i = 9; i < 15; i++){  
+  console.log(currentHour); 
+    for(var i = 9; i < 18; i++){  
       toStringIndex = i.toString(); 
       if(parseInt(currentHour) === i){
       $(`#${toStringIndex}`).css('background-color', 'green')
