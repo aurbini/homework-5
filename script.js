@@ -37,11 +37,17 @@ $(document).ready(function(){
     for(var i = 0; i < 9; i++){
       var index = i+9; 
       var timedEvents = eventsArray;
-      var container = $('<div>').addClass('container');
-      var div = $('<div>').addClass('form'); 
-      var militaryTime = $('<p>').addClass('time');
+      var container = $('<div>').addClass('container',`radius-div${i}`)
+      var div = $('<div>').addClass('form')
+      var militaryTime = $('<p>').addClass('time')
       var input = $('<input>').addClass('events'); 
-      var saveButton = $('<button>').addClass('save'); 
+      var saveButton = $('<button>').addClass('save',`radius-button${i}`)
+      
+      input.addClass(`radius-input-${i}`)
+      div.addClass(`radius-form-${i}`)
+      militaryTime.addClass(`radius-time-${i}`)
+      saveButton.addClass(`radius-button-${i}`)
+
       militaryTime.text(i +9); 
       input.attr('id', i +9);
       input.val(timedEvents.event); 

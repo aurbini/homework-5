@@ -14,6 +14,15 @@
   border-bottom: solid 5px black; 
   margin-bottom: 20px; 
 }
+.radius-form-0,
+.radius-button-0{
+  border-top-right-radius: 10px;
+
+}
+.radius-time-0 ,
+.radius-form-0{
+  border-top-left-radius: 10px;
+}
 #header{
   margin-bottom: 10px ;
   display: inline-block;
