@@ -43,7 +43,6 @@ $(document).ready(function(){
       var input = $('<input>').addClass('events'); 
       var saveButton = $('<button>').addClass('save',`radius-button${i}`)
       
-      input.addClass(`radius-input-${i}`)
       div.addClass(`radius-form-${i}`)
       militaryTime.addClass(`radius-time-${i}`)
       saveButton.addClass(`radius-button-${i}`)
@@ -51,7 +50,7 @@ $(document).ready(function(){
       militaryTime.text(i +9); 
       input.attr('id', i +9);
       input.val(timedEvents.event); 
-      saveButton.text("save")
+      saveButton.text()
       div.append(militaryTime).append(input).append(saveButton); 
       container.append(div); 
       wrapper.append(container);

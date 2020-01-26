@@ -70,6 +70,9 @@
   flex: 1;
   background-color: lightskyblue;
   border-bottom: 1px solid white;
+  background-image: url('assets/lock.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 /* .time{
   background-color: #eeeeee;
